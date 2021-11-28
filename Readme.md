@@ -4,7 +4,6 @@ Il peut arriver que l'exécution du programme bloque, dans ce cas il faut faire 
 
 Usage : py main.py display "nombre d'itérations"
 
-*******
 ## Exemples :
 - py main.py                Effectue une itération, l'affichage est activé**
 - py main.py True           Effectue une itération, l'affichage est activé**
