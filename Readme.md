@@ -2,6 +2,12 @@
 
 Il peut arriver que l'exécution du programme bloque, dans ce cas il faut faire un keyboard interrupt et le relancer.
 
+Il est nécessaire d'avoir la dernière version de Python installée, le programme peut ne pas fonctionner sinon.
+Le programme nécessite d'avoir mathplotlib d'installé, voir la partie "Installation".
+
+## Installation
+- pip install -r requirements.txt
+
 Usage : py main.py display "nombre d'itérations"
 
 ## Exemples :

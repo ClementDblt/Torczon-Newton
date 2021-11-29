@@ -7,6 +7,7 @@ from torczon import torczon
 from newton import newton
 import time
 import sys
+from matplotlib import pyplot
 
 
 def mainTorczon(canvas, circles):
@@ -149,6 +150,9 @@ if __name__ == "__main__":
     newtonTime = 0
     canvasT = None
     canvasN = None
+    torczonTimes = []
+    newtonTimes = []
+    iterations = []
     if len(sys.argv) >= 2:
         if sys.argv[1].lower() == "true":
             display = True
@@ -175,10 +179,19 @@ if __name__ == "__main__":
             drawCircles(canvasT, circlesT)
             input("press [Enter] to continue...")
         torczonTime += mainTorczon(canvasT, circlesT)
+        torczonTimes.append(torczonTime)
         if display:
             input("press [Enter] to continue...")
             drawCircles(canvasN, circlesN)
             input("press [Enter] to continue...")
         newtonTime += mainNewton(canvasN, circlesN)
-    print(f"Temps de calcul Torczon : {round(torczonTime * 1000, 2)}ms\nTemps de calcul Newton : {round(newtonTime * 1000, 2)}ms")
-    input("press [Enter] to quit...")
+        newtonTimes.append(newtonTime)
+        iterations.append(i + 1)
+    pyplot.plot(iterations, torczonTimes, "r--", label="torczon")
+    pyplot.plot(iterations, newtonTimes,  "b-.", label="newton")
+    pyplot.xlabel("Itérations", size=14)
+    pyplot.ylabel("Millisecondes", size=14)
+    pyplot.legend()
+    pyplot.show()
+    #print(f"Temps de calcul Torczon : {round(torczonTime * 1000, 2)}ms\nTemps de calcul Newton : {round(newtonTime * 1000, 2)}ms")
+    #input("press [Enter] to quit...")
