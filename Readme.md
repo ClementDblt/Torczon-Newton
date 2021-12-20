@@ -1,6 +1,6 @@
 # Projet d'algorithmique et complexité
 
-Implémentation et application de la [méthode de torczon](https://ufrsciencestech.u-bourgogne.fr/master1/mi1-tc5/PROJETS_ALGO/UTILITIES/11b-sans-derivee.pdf) et de la [méthode de newton](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton).
+Implémentation et application de la [méthode de torczon](https://ufrsciencestech.u-bourgogne.fr/master1/mi1-tc5/PROJETS_ALGO/UTILITIES/11b-sans-derivee.pdf) et de la [méthode de newton](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton) dans le but de déterminer des cercles tangent entre eux et à un triangle.
 
 *Il peut arriver que l'exécution du programme bloque, dans ce cas il faut faire un keyboard interrupt et le relancer.*
 
