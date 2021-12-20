@@ -1,13 +1,12 @@
 # Projet d'algorithmique et complexité
 
-Implémentation et application de la méthode de [torczon](https://ufrsciencestech.u-bourgogne.fr/master1/mi1-tc5/PROJETS_ALGO/UTILITIES/11b-sans-derivee.pdf) et de la méthode de [newton](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton).
+Implémentation et application de la [méthode de torczon](https://ufrsciencestech.u-bourgogne.fr/master1/mi1-tc5/PROJETS_ALGO/UTILITIES/11b-sans-derivee.pdf) et de la [méthode de newton](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton).
 
-Il peut arriver que l'exécution du programme bloque, dans ce cas il faut faire un keyboard interrupt et le relancer.
-
-Il est nécessaire d'avoir la dernière version de Python installée, le programme peut ne pas fonctionner sinon.
-Le programme nécessite d'avoir mathplotlib d'installé, voir la partie "Installation".
+*Il peut arriver que l'exécution du programme bloque, dans ce cas il faut faire un keyboard interrupt et le relancer.*
 
 ## Installation
+Ce programme nécessite la version 3.9.6 ou supérieur de python ainsi que matplotlib.
+
 - pip install -r requirements.txt
 
 Usage : py main.py display "nombre d'itérations"
